@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            transform: scaleX(-1);
+        }
+        .gata {
+            width: 300px;
+            height: 485px;
+            background-image: url(images/girl2.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            animation: sorriso 4s ease infinite;
+         }
+
+        @keyframes sorriso {
+            0% {background: url(images/girl2.png);}
+            50% {background: url(images/girl_happy2.png); }
+            100% {background: url(images/girl_more_happy5.png); }
+            
+        }
+    </style>
 </head>
 <body>
-    <h2>TEM NADA AINDA</h2>
+    <div class="gata"></div>
 </body>
 </html>
