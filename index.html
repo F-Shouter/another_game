@@ -8,7 +8,7 @@
     <style>
         @keyframes botao {
             0% {
-                transform: translateY(-10px);
+                transform: translateY(30px);
             }
             100% {
                 transform: translateY(-80px);
@@ -17,10 +17,38 @@
         }
         img {
             animation: botao 0.8s ease alternate infinite;
+            
         }
+        @keyframes durma {
+            0% {
+                background: url(images/fundo3.png);
+                background-size: cover;
+            }
+            100% {
+                background: url(images/fundoA.png);
+                background-size: cover; 
+            }
+            
+        }
+        .tot {
+            position: relative;
+            width: 443px;
+            height: 830px;
+            transform: translate(-8%, -5%);
+            background-image: url(images/fundo3.png);
+            animation: durma 5s ease infinite;
+        }
+        .bot {
+            position: absolute;
+            top: 40%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+         }
+        
     </style>
 </head>
 <body>
-   <a href="2.html" hreflang="pt-br" rel="next" target="_self"><img src="images/botao_jogar3.png" alt=""></a>
+   <div class="tot"><div class="bot"><a href="2.html" hreflang="pt-br" rel="next" target="_self"><img src="images/botao_jogarA.png" alt=""></a></div></div>
+   
 </body>
 </html>
