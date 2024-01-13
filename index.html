@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -16,47 +17,46 @@
 
         }
         img {
-            filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.300));
-            animation: botao 0.9s ease alternate infinite;
-
-            
-            
+            animation: botao 0.9s ease alternate infinite;   
         }
         @keyframes durma {
             0% {
                 background: url(images/fundo1.png);
                 background-size: cover;
             }
-            50% {
+            40% {
                 background: url(images/fundo2.png);
                 background-size: cover; 
             }
-            100% {
+            80% {
                 background: url(images/fundo3.png);
+                background-size: cover; 
+            }
+            100% {
+                background: url(images/fundo4.png);
                 background-size: cover; 
             }
             
         }
         .container {
-            width: 400px;
-            height: 800px;
+            width: 100%;
+            height: 100vh;
             background-color: #ccc7b5;
             /*background-image: url(images/fundo1.png);
-            animation: durma 3s ease infinite;*/ 
-            
+            animation: durma 3s ease infinite;*/
             position: relative;
             
         }
         .ah {
-            width: 400px;
-            height: 800px;
+            width: 100%;
+            height: 100vh;
             background-image: url(images/fundo1.png);
-            animation: durma 3s ease infinite; 
+            animation: durma 4s ease infinite; 
               
         }
         .inner-div {
             position: absolute;
-            top: 20%;
+            top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
          }
@@ -64,12 +64,13 @@
     </style>
 </head>
 <body>
-   <div class="container">
-    <div class="ah"></div>
-    <div class="inner-div"><a href="2.html" hreflang="pt-br" rel="next" target="_self"><img src="images/botao_jogarA.png" alt=""></a></div>
-    
-    
-
+   <div class="master">
+       <div class="container">
+        <div class="ah"></div>
+        <div class="inner-div"><a href="2.html" hreflang="pt-br" rel="next" target="_self"><img src="images/botao_jogarA.png" alt=""></a></div>
+       
+       
+       </div>
    </div>
    
 </body>
