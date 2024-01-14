@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes fundo {
+            0% {
+                background-image: url(images/g1.png);
+                background-size: cover;
+            }
+            30% {
+                background-image: url(images/g2.png);
+                background-color: rgb(250, 250, 250);
+                background-size: cover;
+            }
+            100% {
+                background-image: url(images/g3.png);
+                background-color: rgb(240, 240, 240);
+                background-size: cover;
+            }
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            animation: fundo 3s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="master">
+        <div class="container">
+            <div class="inner-div">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

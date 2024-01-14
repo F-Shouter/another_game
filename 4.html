@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes wobble-ver-left{
+            0%,100%{transform:translateY(0) rotate(0);transform-origin:50% 50%;}
+            15%{transform:translateY(-20px) rotate(-6deg) }
+            30%{transform:translateY(15px) rotate(6deg)}
+            45%{transform:translateY(-15px) rotate(-3.6deg);}
+            60%{transform:translateY(9px) rotate(2.4deg)}
+            75%{transform:translateY(-6px) rotate(-1.2deg)}
+        }
+        .container{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            
+        }
+        .inner1 {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/f1.png);
+            background-size: cover;
+            z-index: 1;  
+        }
+        .inner2 {
+            position: absolute;
+            
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/f2.png);
+            background-size: cover;
+            z-index: 0;
+            animation: wobble-ver-left 5s both alternate infinite ;  
+        }
+        @keyframes slide-left
+        {0%{transform:translateX(30px)
+        }
+        100%{transform:translateX(0)}
+        }
+        
+        #negar {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            animation: slide-left 2.9s ease alternate infinite;
+        }
+        #obedecer {
+            position: absolute;
+            top: 20%;
+            right: 15%;
+            animation: slide-left 3.2s ease alternate infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="master">
+        <div class="container">
+            <div class="inner1">
+                
+                <div><a href="5.html" hreflang="pt-br" rel="next" target="_self"><img id="negar" src="images/f3.png" alt=""></a></div>
+
+                <div><a href="6.html" hreflang="pt-br" rel="next" target="_self"><img id="obedecer" src="images/f4.png" alt=""></a></div>
+
+            </div>
+
+            <div class="inner2"></div>
+
+        </div>
+    </div>
+</body>
+</html>
